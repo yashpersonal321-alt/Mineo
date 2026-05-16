@@ -1,0 +1,6 @@
+{
+  "name": "Minecraft AI: Steve's Wisdom",
+  "description": "An advanced Minecraft companion featuring AI-powered building advice, crafting recipes, and realistic Minecraft build visualizations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

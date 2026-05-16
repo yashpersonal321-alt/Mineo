@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "VT323", monospace;
+  
+  --color-mc-green: #3D642D;
+  --color-mc-brown: #5D432C;
+  --color-mc-dirt: #3D2D1E;
+  --color-mc-grass: #4CAF50;
+  --color-mc-stone: #787878;
+  --color-mc-sky: #729EFE;
+}
+
+body {
+  @apply bg-mc-stone text-white font-sans;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+}
+
+.mc-panel {
+  @apply bg-mc-dirt border-4 border-black border-double shadow-[inset_4px_4px_0_rgba(255,255,255,0.1),inset_-4px_-4px_0_rgba(0,0,0,0.3)];
+}
+
+.mc-button {
+  @apply bg-[#C6C6C6] border-2 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#555555] border-b-[#555555] text-black px-4 py-2 active:border-t-[#555555] active:border-l-[#555555] active:border-r-[#FFFFFF] active:border-b-[#FFFFFF] cursor-pointer font-pixel text-xl transition-all;
+}
+
+.pixel-text {
+  font-family: var(--font-pixel);
+}
+
+/* Scrollbar Minecraft Style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-mc-dirt;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-mc-stone border-2 border-black;
+}
+
